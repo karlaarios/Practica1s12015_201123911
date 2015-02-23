@@ -141,6 +141,9 @@ public static String NombreZ, NombreP;
         NombreZ= TxtNombreZ.getText();
         CantidadZ= Integer.parseInt((TxtCantidadZ.getText()));
         CantidadP= Integer.parseInt((TxtCantidadP.getText()));
+        Tablero_201123911 Tablero=new Tablero_201123911();
+        Tablero.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
  
