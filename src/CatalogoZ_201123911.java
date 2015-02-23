@@ -1,18 +1,17 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author marta rexa
- */
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
+
 public class CatalogoZ_201123911 extends javax.swing.JFrame {
 
-    /**
-     * Creates new form CatalogoZ_201123911
-     */
     public CatalogoZ_201123911() {
+        super("Plants vrs. Zombies Guatemalteco 201123911");
+        setLayout(new BorderLayout());
+        setContentPane(new JLabel(new ImageIcon("src/Imagenes/EZ.jpg")));
+        setLayout(new FlowLayout());
         initComponents();
     }
 
