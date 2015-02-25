@@ -15,16 +15,7 @@ public class CatalogoZ_201123911 extends javax.swing.JFrame {
         setContentPane(new JLabel(new ImageIcon("src/Imagenes/EZ.jpg")));
         setLayout(new FlowLayout());
         initComponents();
-         Z1.setTransferHandler(new TransferHandler("icon"));
-        Z2.setTransferHandler(new TransferHandler("icon"));        
-        Z3.setTransferHandler(new TransferHandler("icon"));
-        Z4.setTransferHandler(new TransferHandler("icon"));
-        
-        LblZ1.setTransferHandler(new TransferHandler("icon"));
-        LblZ2.setTransferHandler(new TransferHandler("icon"));
-        LblZ3.setTransferHandler(new TransferHandler("icon"));
-        LblZ4.setTransferHandler(new TransferHandler("icon"));
-        
+    
     }
 
 
@@ -34,10 +25,6 @@ public class CatalogoZ_201123911 extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        LblZ1 = new javax.swing.JLabel();
-        LblZ2 = new javax.swing.JLabel();
-        LblZ3 = new javax.swing.JLabel();
-        LblZ4 = new javax.swing.JLabel();
         Z1 = new javax.swing.JLabel();
         Z2 = new javax.swing.JLabel();
         Z3 = new javax.swing.JLabel();
@@ -63,14 +50,6 @@ public class CatalogoZ_201123911 extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-
-        LblZ1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 102)));
-
-        LblZ2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 102)));
-
-        LblZ3.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 102)));
-
-        LblZ4.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 102)));
 
         Z1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/z9.gif"))); // NOI18N
         Z1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -113,15 +92,6 @@ public class CatalogoZ_201123911 extends javax.swing.JFrame {
                         .addGap(188, 188, 188)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addComponent(LblZ1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(LblZ2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(LblZ3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(LblZ4, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(33, 33, 33)
                         .addComponent(Z1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -135,16 +105,8 @@ public class CatalogoZ_201123911 extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(LblZ1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(LblZ2, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(LblZ3, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(LblZ4, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(97, 97, 97)
+                .addComponent(jButton1)
+                .addGap(195, 195, 195)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(Z1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -174,31 +136,19 @@ public class CatalogoZ_201123911 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void Z1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Z1MousePressed
-          JComponent comp = (JComponent) evt.getSource();
-        TransferHandler handler = comp.getTransferHandler();
-        handler.exportAsDrag(comp, evt, TransferHandler.COPY);
-        Z1.setEnabled(false);
+ 
     }//GEN-LAST:event_Z1MousePressed
 
     private void Z2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Z2MousePressed
-          JComponent comp = (JComponent) evt.getSource();
-        TransferHandler handler = comp.getTransferHandler();
-        handler.exportAsDrag(comp, evt, TransferHandler.COPY);
-        Z2.setEnabled(false);
+
     }//GEN-LAST:event_Z2MousePressed
 
     private void Z3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Z3MousePressed
-          JComponent comp = (JComponent) evt.getSource();
-        TransferHandler handler = comp.getTransferHandler();
-        handler.exportAsDrag(comp, evt, TransferHandler.COPY);
-        Z3.setEnabled(false);
+ 
     }//GEN-LAST:event_Z3MousePressed
 
     private void Z4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Z4MousePressed
-          JComponent comp = (JComponent) evt.getSource();
-        TransferHandler handler = comp.getTransferHandler();
-        handler.exportAsDrag(comp, evt, TransferHandler.COPY);
-        Z4.setEnabled(false);
+ 
     }//GEN-LAST:event_Z4MousePressed
 
     /**
@@ -236,10 +186,6 @@ public class CatalogoZ_201123911 extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel LblZ1;
-    private javax.swing.JLabel LblZ2;
-    private javax.swing.JLabel LblZ3;
-    private javax.swing.JLabel LblZ4;
     private javax.swing.JLabel Z1;
     private javax.swing.JLabel Z2;
     private javax.swing.JLabel Z3;
