@@ -16,15 +16,6 @@ public class CatalogoP_201123911 extends javax.swing.JFrame {
         setContentPane(new JLabel(new ImageIcon("src/Imagenes/EP.jpg")));
         setLayout(new FlowLayout());
         initComponents();
-         P1.setTransferHandler(new TransferHandler("icon"));
-        P2.setTransferHandler(new TransferHandler("icon"));        
-        P3.setTransferHandler(new TransferHandler("icon"));
-        P4.setTransferHandler(new TransferHandler("icon"));
-        
-        LblP1.setTransferHandler(new TransferHandler("icon"));
-        LblP2.setTransferHandler(new TransferHandler("icon"));
-        LblP3.setTransferHandler(new TransferHandler("icon"));
-        LblP4.setTransferHandler(new TransferHandler("icon"));
     }
 
  
@@ -35,10 +26,6 @@ public class CatalogoP_201123911 extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         P4 = new javax.swing.JLabel();
-        LblP1 = new javax.swing.JLabel();
-        LblP4 = new javax.swing.JLabel();
-        LblP2 = new javax.swing.JLabel();
-        LblP3 = new javax.swing.JLabel();
         P2 = new javax.swing.JLabel();
         P1 = new javax.swing.JLabel();
         P3 = new javax.swing.JLabel();
@@ -72,14 +59,6 @@ public class CatalogoP_201123911 extends javax.swing.JFrame {
             }
         });
 
-        LblP1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(128, 27, 23)), javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 204))));
-
-        LblP4.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(128, 27, 23)), javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 204))));
-
-        LblP2.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(128, 27, 23)), javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 204))));
-
-        LblP3.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(128, 27, 23)), javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 204))));
-
         P2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/p3.gif"))); // NOI18N
         P2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -107,27 +86,14 @@ public class CatalogoP_201123911 extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addComponent(P1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(LblP1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(49, 49, 49)
+                .addComponent(P1)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(P2)
-                        .addGap(34, 34, 34)
-                        .addComponent(P3)
-                        .addGap(2, 2, 2)
-                        .addComponent(P4, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(LblP2, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(LblP3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(LblP4, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(P2)
+                .addGap(34, 34, 34)
+                .addComponent(P3)
+                .addGap(2, 2, 2)
+                .addComponent(P4, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1287, Short.MAX_VALUE)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -142,13 +108,7 @@ public class CatalogoP_201123911 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton1)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(LblP3, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
-                            .addComponent(LblP4, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
-                            .addComponent(LblP2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(LblP1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(82, 82, 82)
+                        .addGap(233, 233, 233)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
@@ -177,36 +137,22 @@ public class CatalogoP_201123911 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void P4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_P4MousePressed
-        JComponent comp = (JComponent) evt.getSource();
-        TransferHandler handler = comp.getTransferHandler();
-        handler.exportAsDrag(comp, evt, TransferHandler.COPY);
-        P4.setEnabled(false);
+
     }//GEN-LAST:event_P4MousePressed
 
     private void P2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_P2MousePressed
-        JComponent comp = (JComponent) evt.getSource();
-        TransferHandler handler = comp.getTransferHandler();
-        handler.exportAsDrag(comp, evt, TransferHandler.COPY);
-        P2.setEnabled(false);
+ 
     }//GEN-LAST:event_P2MousePressed
 
     private void P1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_P1MousePressed
-        JComponent comp = (JComponent) evt.getSource();
-        TransferHandler handler = comp.getTransferHandler();
-        handler.exportAsDrag(comp, evt, TransferHandler.COPY);
-        P1.setEnabled(false);
+ 
     }//GEN-LAST:event_P1MousePressed
 
     private void P3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_P3MousePressed
-        JComponent comp = (JComponent) evt.getSource();
-        TransferHandler handler = comp.getTransferHandler();
-        handler.exportAsDrag(comp, evt, TransferHandler.COPY);
-        P3.setEnabled(false);
+
     }//GEN-LAST:event_P3MousePressed
 
-    /**
-     * @param args the command line arguments
-     */
+ 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -239,10 +185,6 @@ public class CatalogoP_201123911 extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel LblP1;
-    private javax.swing.JLabel LblP2;
-    private javax.swing.JLabel LblP3;
-    private javax.swing.JLabel LblP4;
     private javax.swing.JLabel P1;
     private javax.swing.JLabel P2;
     private javax.swing.JLabel P3;
