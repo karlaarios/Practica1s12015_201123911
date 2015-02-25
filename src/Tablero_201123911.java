@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 
 public class Tablero_201123911 extends javax.swing.JFrame {
 public static String NombreP, NombreZ;
-public static int CantidadP, CantidadZ,posA,posicionesMov;
+public static int CantidadP, CantidadZ,posA,posicionesMov,y;
 public static JLabel JugadorA;
 
    
