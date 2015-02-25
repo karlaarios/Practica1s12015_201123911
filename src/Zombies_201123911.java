@@ -1,11 +1,11 @@
 //Este es el constructor de la clase
 
-public class Plantas_201123911 {
+public class Zombies_201123911 {
     public static int PosX, PosY,Tipo;
-    public Plantas_201123911 PlantaAnterior;
-    public Plantas_201123911 PlantaSiguiente;
+    public Zombies_201123911 ZombieAnterior;
+    public Zombies_201123911 ZombieSiguiente;
     
-    public Plantas_201123911(int PosX,int PosY, int Tipo ){
+    public Zombies_201123911(int PosX,int PosY, int Tipo ){
         this.PosX=PosX;
         this.PosY=PosY;
         this.Tipo=Tipo;
@@ -19,20 +19,20 @@ public class Plantas_201123911 {
     }
     //Retorna cual es el siguiente nodo 
     
-public Plantas_201123911 getPlantaSiguiente(){
-        return this.PlantaSiguiente;
+public Zombies_201123911 getZombieSiguiente(){
+        return this.ZombieSiguiente;
     }
     //Retorna cual es el anterior nodo 
-    public Plantas_201123911 getPlantaAnterior(){
-        return this.PlantaAnterior;
+    public Zombies_201123911 getZombieAnterior(){
+        return this.ZombieAnterior;
     }      
     //Enlaza la actual con el siguiente
-    public void EnlazarPlantaSiguiente(Plantas_201123911 PlantaSiguiente){
-        this.PlantaSiguiente=PlantaSiguiente;                
+    public void EnlazarZombieSiguiente(Zombies_201123911 PlantaSiguiente){
+        this.ZombieSiguiente=PlantaSiguiente;                
     }    
     //Enlaza la planta actual con el anterior
-    public void EnlazarPlantaAnterior(Plantas_201123911 PlantaAnterior){
-        this.PlantaSiguiente=PlantaAnterior;                
+    public void EnlazarZombieAnterior(Zombies_201123911 PlantaAnterior){
+        this.ZombieSiguiente=PlantaAnterior;                
     }    
     public int getTipo(){
         return Tipo;
