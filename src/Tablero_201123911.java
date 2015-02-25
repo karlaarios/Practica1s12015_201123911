@@ -7,7 +7,8 @@ import javax.swing.JLabel;
 
 public class Tablero_201123911 extends javax.swing.JFrame {
 public static String NombreP, NombreZ;
-public static int CantidadP, CantidadZ;
+public static int CantidadP, CantidadZ,posA,posicionesMov;
+public static JLabel JugadorA;
 
    
     public Tablero_201123911() {
@@ -111,9 +112,8 @@ public static int CantidadP, CantidadZ;
                             .addComponent(jLabel1))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 304, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel4)
-                        .addComponent(LblPR, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE))
+                    .addComponent(LblPR, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE)
+                    .addComponent(jLabel4)
                     .addComponent(jLabel3)
                     .addComponent(LblZR, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(39, 39, 39))
