@@ -185,15 +185,15 @@ private void GenerarNodosI(){
 //            
 //        }           
     }
- public  void imprimirArreglo(){
+ public final void imprimirArreglo(){
 
-
+       JLabel label;
         String Posicion="";
         Casillas_201123911 Casillas;
         for (int i= 0; i < dim1; i++) {  //ciclo para x
             for (int j= 0; j < dim2; j++) {  //ciclo para y
                 Casillas=arregloCasillas[i][j];                
-                 label =  new JLabel(Posicion);
+                label =  new JLabel(Posicion);
                 label.setBounds(28*i, 28*j, 28, 28);
                 
                 label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -202,17 +202,16 @@ private void GenerarNodosI(){
                     label.setIcon(fondoC); 
                 }
                 else{
-                    ImageIcon fondoC = new ImageIcon("src/Imagenes/FC.jpg");
-                    label.setIcon(fondoC); 
-                    label.setTransferHandler(new TransferHandler("icon"));
-                    arregloCasillas[i][j].icono=fondoC;                }
+                    label.setTransferHandler(new TransferHandler("icon"));                                
+                }
+               
                 
                 Panel1.add(label);
                 
             }
            
         }
- 
+
 
 
 //        timer.start();

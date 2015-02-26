@@ -24,9 +24,9 @@ public class FrTTablero_201123911 extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
-        ComboTTablero2 = new javax.swing.JComboBox();
-        ComboTTablero1 = new javax.swing.JComboBox();
         jLabel1 = new javax.swing.JLabel();
+        TxtC = new javax.swing.JTextField();
+        TxtF = new javax.swing.JTextField();
         jMenuBar1 = new javax.swing.JMenuBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -39,25 +39,32 @@ public class FrTTablero_201123911 extends javax.swing.JFrame {
             }
         });
 
-        ComboTTablero2.setFont(new java.awt.Font("Champagne & Limousines", 0, 18)); // NOI18N
-        ComboTTablero2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Elija las columnas..", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20" }));
-        ComboTTablero2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ComboTTablero2ActionPerformed(evt);
-            }
-        });
-
-        ComboTTablero1.setFont(new java.awt.Font("Champagne & Limousines", 0, 18)); // NOI18N
-        ComboTTablero1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Elija las filas..", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20" }));
-        ComboTTablero1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ComboTTablero1ActionPerformed(evt);
-            }
-        });
-
         jLabel1.setFont(new java.awt.Font("Champagne & Limousines", 0, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("X");
+
+        TxtC.setFont(new java.awt.Font("Champagne & Limousines", 0, 18)); // NOI18N
+        TxtC.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TxtC.setText("Elija las columnas");
+        TxtC.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TxtCMouseClicked(evt);
+            }
+        });
+
+        TxtF.setFont(new java.awt.Font("Champagne & Limousines", 0, 18)); // NOI18N
+        TxtF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TxtF.setText("Elija las Filas");
+        TxtF.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TxtFMouseClicked(evt);
+            }
+        });
+        TxtF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TxtFActionPerformed(evt);
+            }
+        });
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -65,25 +72,25 @@ public class FrTTablero_201123911 extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(184, 184, 184)
-                .addComponent(ComboTTablero1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(171, 171, 171)
+                .addComponent(TxtF, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton1)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(ComboTTablero2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(203, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addComponent(TxtC, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(211, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(231, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ComboTTablero2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ComboTTablero1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
+                    .addComponent(jLabel1)
+                    .addComponent(TxtC, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TxtF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(89, 89, 89)
                 .addComponent(jButton1)
                 .addGap(167, 167, 167))
@@ -93,7 +100,8 @@ public class FrTTablero_201123911 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
+        dim1=Integer.parseInt(TxtF.getText());
+        dim2=Integer.parseInt(TxtC.getText());
         Tablero_201123911 Tablero=new Tablero_201123911();
         Tablero.setVisible(true);
         dispose();
@@ -103,80 +111,17 @@ public class FrTTablero_201123911 extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void ComboTTablero1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboTTablero1ActionPerformed
-JComboBox x=(JComboBox)evt.getSource();
-        if(x.getSelectedItem().equals("10")){
-            dim1=10;
-        }
-        if(x.getSelectedItem().equals("11")){
-            dim1=11;
-        }
-        if(x.getSelectedItem().equals("12")){
-            dim1=12;
-        }
-        if(x.getSelectedItem().equals("13")){
-            dim1=13;
-        }
-        if(x.getSelectedItem().equals("14")){
-            dim1=14;
-        }
-        if(x.getSelectedItem().equals("15")){
-            dim1=15;
-        }
-        if(x.getSelectedItem().equals("16")){
-            dim1=16;
-        }
-        if(x.getSelectedItem().equals("17")){
-            dim1=17;
-        }
-        if(x.getSelectedItem().equals("19")){
-            dim1=18;
-        }
-        if(x.getSelectedItem().equals("19")){
-            dim1=19;
-        }
-        if(x.getSelectedItem().equals("20")){
-            dim1=20;
-        }
-        
-    }//GEN-LAST:event_ComboTTablero1ActionPerformed
+    private void TxtCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TxtCMouseClicked
+        TxtC.setText("");
+    }//GEN-LAST:event_TxtCMouseClicked
 
-    private void ComboTTablero2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboTTablero2ActionPerformed
-JComboBox x=(JComboBox)evt.getSource();
-        if(x.getSelectedItem().equals("10")){
-            dim2=10;
-        }
-        if(x.getSelectedItem().equals("11")){
-            dim2=11;
-        }
-        if(x.getSelectedItem().equals("12")){
-            dim2=12;
-        }
-        if(x.getSelectedItem().equals("13")){
-            dim2=13;
-        }
-        if(x.getSelectedItem().equals("14")){
-            dim2=14;
-        }
-        if(x.getSelectedItem().equals("15")){
-            dim2=15;
-        }
-        if(x.getSelectedItem().equals("16")){
-            dim2=16;
-        }
-        if(x.getSelectedItem().equals("17")){
-            dim2=17;
-        }
-        if(x.getSelectedItem().equals("19")){
-            dim2=18;
-        }
-        if(x.getSelectedItem().equals("19")){
-            dim2=19;
-        }
-        if(x.getSelectedItem().equals("20")){
-            dim2=20;
-        }
-    }//GEN-LAST:event_ComboTTablero2ActionPerformed
+    private void TxtFMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TxtFMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtFMouseClicked
+
+    private void TxtFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtFActionPerformed
+        TxtF.setText("");
+    }//GEN-LAST:event_TxtFActionPerformed
 
 
     public static void main(String args[]) {
@@ -211,8 +156,8 @@ JComboBox x=(JComboBox)evt.getSource();
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox ComboTTablero1;
-    private javax.swing.JComboBox ComboTTablero2;
+    private javax.swing.JTextField TxtC;
+    private javax.swing.JTextField TxtF;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;
