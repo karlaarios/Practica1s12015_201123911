@@ -1,10 +1,10 @@
 
-public class ListadoZombies_20112391111 {
+public class ListadoZombies_201123911 {
     public static Zombies_201123911 PrimerZombie=null;
     public Zombies_201123911 ZombieActual=null;
     public static Zombies_201123911 UltimoZombie=null;
     
-    public ListadoZombies_20112391111(){
+    public ListadoZombies_201123911(){
      PrimerZombie=null;
      UltimoZombie=null;
      ZombieActual=PrimerZombie;
