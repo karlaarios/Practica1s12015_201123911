@@ -1,8 +1,8 @@
 
 public class ListadoPlantas_201123911 {
-    public static Zombies_201123911 PrimerPlanta=null;
-    public Zombies_201123911 PlantaActual=null;
-    public static Zombies_201123911 UltimaPlanta=null;
+    public static Plantas_201123911 PrimerPlanta=null;
+    public Plantas_201123911 PlantaActual=null;
+    public static Plantas_201123911 UltimaPlanta=null;
     
     public ListadoPlantas_201123911(){
      PrimerPlanta=null;
@@ -10,28 +10,28 @@ public class ListadoPlantas_201123911 {
      PlantaActual=PrimerPlanta;
     }
 
-    public void Agregar(Zombies_201123911 PlantasAgregar){
-        Zombies_201123911 NodoAgregar= PlantasAgregar;
+    public void Agregar(Plantas_201123911 PlantasAgregar){
+        Plantas_201123911 NodoAgregar= PlantasAgregar;
         if(this.PrimerPlanta==null){
             this.PrimerPlanta=NodoAgregar;
-            this.PrimerPlanta.EnlazarZombieAnterior(null);
-            this.PrimerPlanta.EnlazarZombieSiguiente(null);
+            this.PrimerPlanta.EnlazarPlantaAnterior(null);
+            this.PrimerPlanta.EnlazarPlantaSiguiente(null);
         }
         else{
-            Zombies_201123911 PlantaActual=this.PrimerPlanta;
-            while(PlantaActual.getZombieSiguiente()!=null){
-                PlantaActual= PlantaActual.getZombieSiguiente();                
+            Plantas_201123911 PlantaActual=this.PrimerPlanta;
+            while(PlantaActual.getPlantaSiguiente()!=null){
+                PlantaActual= PlantaActual.getPlantaSiguiente();                
             }
-           PlantaActual.EnlazarZombieSiguiente(NodoAgregar);
-           NodoAgregar.EnlazarZombieAnterior(PlantaActual);
-           NodoAgregar.EnlazarZombieSiguiente(null);
+           PlantaActual.EnlazarPlantaSiguiente(NodoAgregar);
+           NodoAgregar.EnlazarPlantaAnterior(PlantaActual);
+           NodoAgregar.EnlazarPlantaSiguiente(null);
         }
     }
     //Retorna cual es el siguiente nodo 
     public void getPlantaSiguiente(){
         if(PlantaActual!=null){
-            if((PlantaActual.getZombieSiguiente())!=null){
-            PlantaActual=PlantaActual.getZombieSiguiente();
+            if((PlantaActual.getPlantaSiguiente())!=null){
+            PlantaActual=PlantaActual.getPlantaSiguiente();
             }
         }else{
             PlantaActual=PrimerPlanta;
@@ -40,8 +40,8 @@ public class ListadoPlantas_201123911 {
     //Retorna cual es el anterior nodo 
     public void getPlantaAnterior(){
         if(PlantaActual!=null){
-            if((PlantaActual.getZombieAnterior())!=null){
-            PlantaActual=PlantaActual.getZombieAnterior();
+            if((PlantaActual.getPlantaAnterior())!=null){
+            PlantaActual=PlantaActual.getPlantaAnterior();
             }
         }
         else{
@@ -54,10 +54,10 @@ public class ListadoPlantas_201123911 {
         if(PlantaActual==null){
             PlantaActual=PrimerPlanta;
         }else{
-            if(PlantaActual.ZombieSiguiente==null){
+            if(PlantaActual.PlantaSiguiente==null){
                 
             }else{
-                PlantaActual=PlantaActual.ZombieSiguiente;
+                PlantaActual=PlantaActual.PlantaSiguiente;
             }
         }
     }
@@ -66,10 +66,10 @@ public class ListadoPlantas_201123911 {
         if(PlantaActual==null){
             PlantaActual=UltimaPlanta;
         }else{
-            if(PlantaActual.ZombieAnterior==null){
+            if(PlantaActual.PlantaAnterior==null){
                 
             }else{
-                PlantaActual=PlantaActual.ZombieAnterior;
+                PlantaActual=PlantaActual.PlantaAnterior;
             }
         }
 

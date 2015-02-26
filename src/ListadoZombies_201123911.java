@@ -10,8 +10,8 @@ public class ListadoZombies_201123911 {
      ZombieActual=PrimerZombie;
     }
 
-    public void Agregar(Zombies_201123911 PlantasAgregar){
-        Zombies_201123911 NodoAgregar= PlantasAgregar;
+    public void Agregar(Zombies_201123911 ZombiesAgregar){
+        Zombies_201123911 NodoAgregar= ZombiesAgregar;
         if(this.PrimerZombie==null){
             this.PrimerZombie=NodoAgregar;
             this.PrimerZombie.EnlazarZombieAnterior(null);
