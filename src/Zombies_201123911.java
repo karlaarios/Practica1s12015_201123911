@@ -1,21 +1,22 @@
 //Este es el constructor de la clase
 
 public class Zombies_201123911 {
-    public static int PosX, PosY,Tipo;
+    public static int Punteo;
+    public static String NombreZ, Tipo;
     public Zombies_201123911 ZombieAnterior;
     public Zombies_201123911 ZombieSiguiente;
     
-    public Zombies_201123911(int PosX,int PosY, int Tipo ){
-        this.PosX=PosX;
-        this.PosY=PosY;
+    public Zombies_201123911(String NombreP, String Tipo, int Punteo ){
+        this.NombreZ=NombreP;
         this.Tipo=Tipo;
+        this.Punteo=Punteo;
         
     }
     
-    public void ActualizarDatos(int PosX,int PosY, int Tipo){
-        this.PosX=PosX;
-        this.PosY=PosY;
+    public void ActualizarDatos(String NombreZ, String Tipo, int Punteo){
+        this.NombreZ=NombreZ;
         this.Tipo=Tipo;
+        this.Punteo=Punteo;
     }
     //Retorna cual es el siguiente nodo 
     
@@ -34,19 +35,19 @@ public Zombies_201123911 getZombieSiguiente(){
     public void EnlazarZombieAnterior(Zombies_201123911 PlantaAnterior){
         this.ZombieSiguiente=PlantaAnterior;                
     }    
-    public int getTipo(){
+    public String getTipo(){
         return Tipo;
     }
-   public int getPosX(){
-       return PosX;
+   public int getPunteo(){
+       return Punteo;
    }
     
 
     /**
      * @return the Apellido
      */
-    public int PosY() {
-        return PosY;
+    public String NombreZ() {
+        return NombreZ;
     }
 
 }
