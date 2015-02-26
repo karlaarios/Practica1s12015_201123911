@@ -4,11 +4,13 @@ import java.awt.FlowLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.TransferHandler;
 
 
 public class CatalogoP_201123911 extends javax.swing.JFrame {
 public static boolean p1,p2,p3,p4,p5;
+public static int PosX, PosY, Tipo;
 
     public CatalogoP_201123911() {
         super("Plants vrs. Zombies Guatemalteco 201123911");
@@ -682,6 +684,13 @@ public static boolean p1,p2,p3,p4,p5;
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         p3=true;
+     
+                    Plantas_201123911 PlantaActual=new Plantas_201123911(PosX, PosY, Tipo);
+                    Principal_201123911.ListadoPlantas.Agregar(new Plantas_201123911(PosX, PosY, Tipo));
+                    JOptionPane.showMessageDialog(null, "Ingresado ", "Plantas vs Zombies Guatemalteco 201123911", JOptionPane.PLAIN_MESSAGE);
+
+                    JOptionPane.showMessageDialog(null, "La edad ingresada es erronea. Porfavor verifique","Practica 2 201123911",JOptionPane.ERROR_MESSAGE);
+
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed

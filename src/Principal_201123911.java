@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 
 
 public class Principal_201123911 extends javax.swing.JFrame {
-
+public static ListadoPlantas_201123911 ListadoPlantas=new ListadoPlantas_201123911();
  
     public Principal_201123911() {
         super("Plants vrs. Zombies Guatemalteco 201123911");

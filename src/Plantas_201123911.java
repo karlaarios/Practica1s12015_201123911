@@ -1,11 +1,11 @@
 //Este es el constructor de la clase
 
-public class Zombies_2011239111 {
+public class Plantas_201123911 {
     public static int PosX, PosY,Tipo;
     public Zombies_201123911 PlantaAnterior;
     public Zombies_201123911 PlantaSiguiente;
     
-    public Zombies_2011239111(int PosX,int PosY, int Tipo ){
+    public Plantas_201123911(int PosX,int PosY, int Tipo ){
         this.PosX=PosX;
         this.PosY=PosY;
         this.Tipo=Tipo;

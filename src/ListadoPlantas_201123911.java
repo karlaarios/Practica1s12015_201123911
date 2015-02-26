@@ -1,10 +1,10 @@
 
-public class ListadoPlantas_2011239111 {
+public class ListadoPlantas_201123911 {
     public static Zombies_201123911 PrimerPlanta=null;
     public Zombies_201123911 PlantaActual=null;
     public static Zombies_201123911 UltimaPlanta=null;
     
-    public ListadoPlantas_2011239111(){
+    public ListadoPlantas_201123911(){
      PrimerPlanta=null;
      UltimaPlanta=null;
      PlantaActual=PrimerPlanta;
