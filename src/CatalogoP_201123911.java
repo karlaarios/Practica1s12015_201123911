@@ -689,8 +689,7 @@ public static String NombreP,TipoP;
                     Plantas_201123911 PlantaActual=new Plantas_201123911(PosX, PosY, Tipo);
                     Principal_201123911.ListadoPlantas.Agregar(new Plantas_201123911(PosX, PosY, Tipo));
                     JOptionPane.showMessageDialog(null, "Ingresado ", "Plantas vs Zombies Guatemalteco 201123911", JOptionPane.PLAIN_MESSAGE);
-
-                    JOptionPane.showMessageDialog(null, "La edad ingresada es erronea. Porfavor verifique","Practica 2 201123911",JOptionPane.ERROR_MESSAGE);
+                    
 
     }//GEN-LAST:event_jButton7ActionPerformed
 
