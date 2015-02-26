@@ -39,7 +39,6 @@ Casillas_201123911 arregloCasillas[][];
          dim1=FrTTablero_201123911.dim1;
         dim2=FrTTablero_201123911.dim2;
 
-        Label1.setText(""+dim1+" x "+dim2);
 //        this.tiempo();
         //PnlTablero.setBounds(25, 25, dim1*28, dim2*28);
         imprimirArreglo();
@@ -199,16 +198,16 @@ private void GenerarNodosI(){
                 
                 label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
                 if (j==0 ||i==0||i==dim1-1||j==dim2-1){
-                    ImageIcon fondoC = new ImageIcon("src/Imagenes/LO2.png");
+                    ImageIcon fondoC = new ImageIcon("src/Imagenes/FC.jpg");
                     label.setIcon(fondoC); 
                 }
                 else{
-                    ImageIcon fondoC = new ImageIcon("src/Imagenes/FB.png");
+                    ImageIcon fondoC = new ImageIcon("src/Imagenes/FC.jpg");
                     label.setIcon(fondoC); 
                     label.setTransferHandler(new TransferHandler("icon"));
                     arregloCasillas[i][j].icono=fondoC;                }
                 
-                PnlTablero.add(label);
+                Panel1.add(label);
                 
             }
            

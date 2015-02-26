@@ -1,16 +1,17 @@
 
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-public class Casillas_2011239111 extends JLabel{
+public class Casillas_201123911 extends JLabel{
 
     String Posicion="";
     int IntNumero = 0;
-
-    public Casillas_2011239111(){
+    ImageIcon icono;
+    public Casillas_201123911(){
 
     }
 
-    public Casillas_2011239111(String Posicion, int intNumero){
+    public Casillas_201123911(String Posicion, int intNumero){
 
         this.IntNumero = intNumero;
         this.Posicion = Posicion;
