@@ -1,14 +1,25 @@
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.Timer;
+import javax.swing.TransferHandler;
 
 
 public class Tablero_201123911 extends javax.swing.JFrame {
 public static String NombreP, NombreZ;
 public static int CantidadP, CantidadZ,posA,posicionesMov,y, ancho, alto;
 public static JLabel JugadorA;
+public static int segundos = 0,minutos=0;
+public static Timer timer;
+public static int dim1,dim2,contador;   
+public static Icon Icono;
+
+JLabel label;    
+String Texto;
+Casillas_201123911 arregloCasillas[][];
 
    
     public Tablero_201123911() {
@@ -25,6 +36,13 @@ public static JLabel JugadorA;
         CantidadP=ElegirJ_201123911.CantidadP;
         LblPR.setText(""+CantidadP);
         LblZR.setText(""+CantidadZ);
+         dim1=FrTTablero_201123911.dim1;
+        dim2=FrTTablero_201123911.dim2;
+
+        Label1.setText(""+dim1+" x "+dim2);
+//        this.tiempo();
+        //PnlTablero.setBounds(25, 25, dim1*28, dim2*28);
+        imprimirArreglo();
     }
 
 
@@ -40,7 +58,7 @@ public static JLabel JugadorA;
         jLabel4 = new javax.swing.JLabel();
         LblPR = new javax.swing.JLabel();
         LblZR = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        Panel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -72,14 +90,14 @@ public static JLabel JugadorA;
         LblZR.setFont(new java.awt.Font("Zombie", 2, 24)); // NOI18N
         LblZR.setForeground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout Panel1Layout = new javax.swing.GroupLayout(Panel1);
+        Panel1.setLayout(Panel1Layout);
+        Panel1Layout.setHorizontalGroup(
+            Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 477, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        Panel1Layout.setVerticalGroup(
+            Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 292, Short.MAX_VALUE)
         );
 
@@ -109,7 +127,7 @@ public static JLabel JugadorA;
                 .addGap(47, 47, 47))
             .addGroup(layout.createSequentialGroup()
                 .addGap(98, 98, 98)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -127,7 +145,7 @@ public static JLabel JugadorA;
                             .addComponent(LblJP, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Panel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(LblPR, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE)
@@ -168,6 +186,42 @@ private void GenerarNodosI(){
 //            
 //        }           
     }
+ public  void imprimirArreglo(){
+
+
+        String Posicion="";
+        Casillas_201123911 Casillas;
+        for (int i= 0; i < dim1; i++) {  //ciclo para x
+            for (int j= 0; j < dim2; j++) {  //ciclo para y
+                Casillas=arregloCasillas[i][j];                
+                 label =  new JLabel(Posicion);
+                label.setBounds(28*i, 28*j, 28, 28);
+                
+                label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+                if (j==0 ||i==0||i==dim1-1||j==dim2-1){
+                    ImageIcon fondoC = new ImageIcon("src/Imagenes/LO2.png");
+                    label.setIcon(fondoC); 
+                }
+                else{
+                    ImageIcon fondoC = new ImageIcon("src/Imagenes/FB.png");
+                    label.setIcon(fondoC); 
+                    label.setTransferHandler(new TransferHandler("icon"));
+                    arregloCasillas[i][j].icono=fondoC;                }
+                
+                PnlTablero.add(label);
+                
+            }
+           
+        }
+ 
+
+
+//        timer.start();
+
+
+
+
+    }
     public static void main(String args[]) {
        
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -204,10 +258,10 @@ private void GenerarNodosI(){
     private javax.swing.JLabel LblJZ;
     private javax.swing.JLabel LblPR;
     private javax.swing.JLabel LblZR;
+    private javax.swing.JPanel Panel1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
