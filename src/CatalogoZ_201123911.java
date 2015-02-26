@@ -818,8 +818,8 @@ public static String NombreZ,Tipo;
         
     }//GEN-LAST:event_jButton4ActionPerformed
 private void Modificar(){
-    Plantas_201123911 PlantaTemporal=new Plantas_201123911(NombreZ,Tipo,Punteo);
-                    Principal_201123911.ListadoPlantas.PlantaActual.ActualizarDatos(NombreZ,Tipo,Punteo);
+    Zombies_201123911 ZombieTemporal=new Zombies_201123911(NombreZ,Tipo,Punteo);
+                    Principal_201123911.ListadoZombies.ZombieActual.ActualizarDatos(NombreZ,Tipo,Punteo);
                     JOptionPane.showMessageDialog(null, "Modificado Correctamente ", "Plants vs Zombies Guatemalteco 201123911", JOptionPane.PLAIN_MESSAGE);
 }
     private void TxtN4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtN4ActionPerformed
