@@ -191,7 +191,7 @@ public static String NombreZ, NombreP;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        CatalogoZ_201123911 CZ=new CatalogoZ_201123911();
+        CatalogoZ_2011239111 CZ=new CatalogoZ_2011239111();
         CZ.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
