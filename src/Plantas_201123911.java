@@ -1,21 +1,22 @@
 //Este es el constructor de la clase
 
 public class Plantas_201123911 {
-    public static int PosX, PosY,Tipo;
+    public static int Punteo;
+    public static String NombreP, Tipo;
     public Plantas_201123911 PlantaAnterior;
     public Plantas_201123911 PlantaSiguiente;
     
-    public Plantas_201123911(int PosX,int PosY, int Tipo ){
-        this.PosX=PosX;
-        this.PosY=PosY;
+    public Plantas_201123911(String NombreP, String Tipo, int Punteo ){
+        this.NombreP=NombreP;
         this.Tipo=Tipo;
+        this.Punteo=Punteo;
         
     }
     
-    public void ActualizarDatos(int PosX,int PosY, int Tipo){
-        this.PosX=PosX;
-        this.PosY=PosY;
+    public void ActualizarDatos(String NombreP, String Tipo, int Punteo){
+       this.NombreP=NombreP;
         this.Tipo=Tipo;
+        this.Punteo=Punteo;
     }
     //Retorna cual es el siguiente nodo 
     
@@ -34,19 +35,19 @@ public Plantas_201123911 getPlantaSiguiente(){
     public void EnlazarPlantaAnterior(Plantas_201123911 PlantaAnterior){
         this.PlantaSiguiente=PlantaAnterior;                
     }    
-    public int getTipo(){
+    public String getTipo(){
         return Tipo;
     }
-   public int getPosX(){
-       return PosX;
+   public int getPunteo(){
+       return Punteo;
    }
     
 
     /**
      * @return the Apellido
      */
-    public int PosY() {
-        return PosY;
+    public String NombreP() {
+        return NombreP;
     }
 
 }

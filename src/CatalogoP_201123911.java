@@ -10,8 +10,8 @@ import javax.swing.TransferHandler;
 
 public class CatalogoP_201123911 extends javax.swing.JFrame {
 public static boolean p1,p2,p3,p4,p5;
-public static int PosX, PosY, Tipo, Punteo;
-public static String NombreP,TipoP;
+public static int PosX, PosY, Punteo;
+public static String NombreP,Tipo;
 
     public CatalogoP_201123911() {
         super("Plants vrs. Zombies Guatemalteco 201123911");
@@ -677,17 +677,34 @@ public static String NombreP,TipoP;
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         p1=true;
+        Punteo=Integer.parseInt(TxtP1.getText());
+        NombreP=TxtN1.getText();
+        Tipo= TxtA1.getText();
+        
+                    Plantas_201123911 PlantaActual=new Plantas_201123911(NombreP,Tipo,Punteo);
+                    Principal_201123911.ListadoPlantas.Agregar(new Plantas_201123911(NombreP,Tipo,Punteo));
+                    JOptionPane.showMessageDialog(null, "Ingresado ", "Plantas vs Zombies Guatemalteco 201123911", JOptionPane.PLAIN_MESSAGE);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         p2=true;
+        Punteo=Integer.parseInt(TxtP2.getText());
+        NombreP=TxtN2.getText();
+        Tipo= TxtA2.getText();
+        
+                    Plantas_201123911 PlantaActual=new Plantas_201123911(NombreP,Tipo,Punteo);
+                    Principal_201123911.ListadoPlantas.Agregar(new Plantas_201123911(NombreP,Tipo,Punteo));
+                    JOptionPane.showMessageDialog(null, "Ingresado ", "Plantas vs Zombies Guatemalteco 201123911", JOptionPane.PLAIN_MESSAGE);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         p3=true;
         Punteo=Integer.parseInt(TxtP3.getText());
-                    Plantas_201123911 PlantaActual=new Plantas_201123911(PosX, PosY, Tipo);
-                    Principal_201123911.ListadoPlantas.Agregar(new Plantas_201123911(PosX, PosY, Tipo));
+        NombreP=TxtN3.getText();
+        Tipo= TxtA3.getText();
+        
+                    Plantas_201123911 PlantaActual=new Plantas_201123911(NombreP,Tipo,Punteo);
+                    Principal_201123911.ListadoPlantas.Agregar(new Plantas_201123911(NombreP,Tipo,Punteo));
                     JOptionPane.showMessageDialog(null, "Ingresado ", "Plantas vs Zombies Guatemalteco 201123911", JOptionPane.PLAIN_MESSAGE);
                     
 
@@ -695,6 +712,13 @@ public static String NombreP,TipoP;
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         p4=true;
+        Punteo=Integer.parseInt(TxtP4.getText());
+        NombreP=TxtN4.getText();
+        Tipo= TxtA4.getText();
+        
+                    Plantas_201123911 PlantaActual=new Plantas_201123911(NombreP,Tipo,Punteo);
+                    Principal_201123911.ListadoPlantas.Agregar(new Plantas_201123911(NombreP,Tipo,Punteo));
+                    JOptionPane.showMessageDialog(null, "Ingresado ", "Plantas vs Zombies Guatemalteco 201123911", JOptionPane.PLAIN_MESSAGE);
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void P5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_P5MousePressed
@@ -703,12 +727,22 @@ public static String NombreP,TipoP;
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         p5=true;
+        Punteo=Integer.parseInt(TxtP5.getText());
+        NombreP=TxtN5.getText();
+        Tipo= TxtA5.getText();
+        
+                    Plantas_201123911 PlantaActual=new Plantas_201123911(NombreP,Tipo,Punteo);
+                    Principal_201123911.ListadoPlantas.Agregar(new Plantas_201123911(NombreP,Tipo,Punteo));
+                    JOptionPane.showMessageDialog(null, "Ingresado ", "Plantas vs Zombies Guatemalteco 201123911", JOptionPane.PLAIN_MESSAGE);
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         TxtN1.setEnabled(true);
         TxtA1.setEnabled(true);
         TxtP1.setEnabled(true);
+          Plantas_201123911 PlantaTemporal=new Plantas_201123911(NombreP,Tipo,Punteo);
+                    Principal_201123911.ListadoPlantas.PlantaActual.ActualizarDatos(NombreP,Tipo,Punteo);
+                    JOptionPane.showMessageDialog(null, "Modificado Correctamente ", "Plants vs Zombies Guatemalteco 201123911", JOptionPane.PLAIN_MESSAGE);
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
