@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 
 public class Tablero_201123911 extends javax.swing.JFrame {
 public static String NombreP, NombreZ;
-public static int CantidadP, CantidadZ,posA,posicionesMov,y;
+public static int CantidadP, CantidadZ,posA,posicionesMov,y, ancho, alto;
 public static JLabel JugadorA;
 
    
@@ -122,7 +122,34 @@ public static JLabel JugadorA;
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-
+private void GenerarNodosI(){
+//        try {
+//
+//              String dotPath = "c:\\Archivos de programa\\Graphviz 2.38\\bin\\dot.exe";
+//
+//              String fileInputPath = "\\desktop\\grafo1.txt";
+//              String fileOutputPath = "\\desktop\\grafo1.jpg";
+//
+//              String tParam = "-Tjpg";
+//              String tOParam = "-o";
+//
+//              String[] cmd = new String[5];
+//              cmd[0] = dotPath;
+//              cmd[1] = tParam;
+//              cmd[2] = fileInputPath;
+//              cmd[3] = tOParam;
+//              cmd[4] = fileOutputPath;
+//
+//              Runtime rt = Runtime.getRuntime();
+//
+//              rt.exec( cmd );
+//
+//            } catch (Exception ex) {
+//              ex.printStackTrace();
+//            } finally {
+//            
+//        }           
+    }
     public static void main(String args[]) {
        
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
